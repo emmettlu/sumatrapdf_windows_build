@@ -45,7 +45,7 @@ jobs:
         with:
           name: ${{ env.PROJECT_BIN }}_${{ runner.os }}
           path: |
-            ${{ env.PROJECT_PATH }}/x64/Release/*.dll
-            ${{ env.PROJECT_PATH }}/x64/Release/*.exe
+            ${{ env.PROJECT_PATH }}/out/rel64/*.dll
+            ${{ env.PROJECT_PATH }}/out/rel64/*.exe
 
-            ${{ env.PROJECT_PATH }}/x64/Release/${{ env.PROJECT_BIN }}.exe
+            ${{ env.PROJECT_PATH }}/out/rel64/${{ env.PROJECT_BIN }}.exe
