@@ -31,7 +31,7 @@ jobs:
       - name: Build
         working-directory: ${{ env.PROJECT_PATH }}/vs2022/SumatraPDF.sln
         run: |
-          msbuild umatraPDF.sln `
+          msbuild SumatraPDF.sln `
           /p:PlatformToolset=v142 `
           /p:WindowsTargetPlatformVersion=10.0.19041.0 `
           /p:Platform=x64 `
