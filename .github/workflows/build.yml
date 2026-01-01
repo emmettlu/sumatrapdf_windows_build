@@ -29,8 +29,10 @@ jobs:
           msbuild-architecture: x64
 
       - name: Build
-        working-directory: ${{ env.PROJECT_PATH }}/vs2022/SumatraPDF.sln
+        working-directory: ${{ env.PROJECT_PATH }}/vs2022
         run: |
+          nuget restore
+
           msbuild SumatraPDF.sln `
           /p:PlatformToolset=v142 `
           /p:WindowsTargetPlatformVersion=10.0.19041.0 `
